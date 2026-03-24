@@ -65,44 +65,56 @@
 <p class="meta">Irtiqaa · Last updated March 2026</p>
 
 <div class="card">
-  <p><span class="highlight">Short version:</span> Irtiqaa does not collect, store, or share your personal data. Your journeys, habits, and progress stay entirely on your device.</p>
+  <p><span class="highlight">Short version:</span> Your journeys, habits, and progress are stored locally on your device. If you sign in, your data is synced to a secure cloud for backup. We do not sell, share, or monetize your data.</p>
 </div>
 
 <h2>1. Information We Collect</h2>
-<p>Irtiqaa stores all app data <strong>locally on your device</strong> using SQLite. We do not operate servers, collect analytics, or track usage. The following data exists only on your device:</p>
+<p>Irtiqaa stores all app data <strong>locally on your device</strong> using SQLite. The following data exists on your device:</p>
 <ul>
   <li>Journey plans, programs, templates, and tasks you create</li>
-  <li>Daily habit records and progress</li>
-  <li>App preferences (theme, language, reminders)</li>
-  <li>AI provider selection</li>
+  <li>Daily habit records, reading progress, and streaks</li>
+  <li>App preferences (theme, language, reminders, sync policy)</li>
 </ul>
+<p>No data leaves your device unless you opt in to cloud sync or use a cloud AI feature.</p>
 
-<h2>2. AI-Generated Plans</h2>
+<h2>2. Account &amp; Cloud Sync</h2>
+<p>You may sign in with <strong>Google</strong> or <strong>Apple</strong> to enable cloud backup. When you do:</p>
+<ul>
+  <li>Your display name, email address, and authentication provider are stored in a secure user profile on Google Cloud Firestore.</li>
+  <li>Your journey structures, task records, and completion data are synced to Firestore so they can be restored on other devices signed into the same account.</li>
+  <li>Sync frequency is controlled by you (Off, Daily, or Weekly) in Settings.</li>
+</ul>
+<p>If you do not sign in, no data is transmitted to any server.</p>
+
+<h2>3. AI-Generated Plans</h2>
 <p>When you use the "Generate with AI" feature, the goal text you enter is sent to the AI provider you have selected in Settings:</p>
 <ul>
-  <li><strong>Apple Intelligence</strong> — processed entirely on-device; nothing leaves your iPhone.</li>
+  <li><strong>Apple Intelligence</strong> — processed entirely on-device; nothing leaves your device.</li>
   <li><strong>Claude (Anthropic)</strong> — your goal text is sent to Anthropic's API. See <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a>.</li>
   <li><strong>ChatGPT (OpenAI)</strong> — your goal text is sent to OpenAI's API. See <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a>.</li>
   <li><strong>Gemini (Google)</strong> — your goal text is sent to Google's API. See <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
 </ul>
 <p>No other data (journeys, tasks, records) is sent to any AI provider.</p>
 
-<h2>3. API Keys</h2>
-<p>API keys you enter for cloud AI providers are stored exclusively in the <strong>iOS Keychain</strong> on your device. They are never transmitted to any server other than the corresponding AI provider's API endpoint during plan generation.</p>
+<h2>4. API Keys</h2>
+<p>API keys you enter for cloud AI providers are stored securely on your device (iOS Keychain or Android encrypted storage). They are never transmitted to any server other than the corresponding AI provider's API endpoint during plan generation.</p>
 
-<h2>4. Notifications</h2>
-<p>If you enable daily reminders, Irtiqaa requests permission to send local notifications. All notification scheduling is handled on-device by iOS. No notification data is transmitted externally.</p>
+<h2>5. Notifications</h2>
+<p>If you enable daily reminders, Irtiqaa requests permission to send local notifications. All notification scheduling is handled on-device. No notification data is transmitted externally.</p>
 
-<h2>5. Third-Party Services</h2>
-<p>Irtiqaa does not integrate any third-party analytics, advertising, crash-reporting, or tracking SDKs. The only external network requests are AI API calls, which are initiated explicitly by you when generating a plan.</p>
+<h2>6. Data Retention &amp; Deletion</h2>
+<p>Local data persists until you uninstall the app or clear app data. If you have cloud sync enabled, your cloud data persists until you delete your account. You can delete your account at any time from Settings &gt; Account &amp; Cloud &gt; Delete Account. This permanently removes your Firestore user profile and all synced data.</p>
 
-<h2>6. Children's Privacy</h2>
+<h2>7. Third-Party Services</h2>
+<p>Irtiqaa integrates with Firebase Authentication (Google/Apple Sign-In) and Google Cloud Firestore for cloud sync. The app does not include any third-party analytics, advertising, or crash-reporting SDKs. AI API calls are initiated explicitly by you.</p>
+
+<h2>8. Children's Privacy</h2>
 <p>Irtiqaa is not directed at children under 13. We do not knowingly collect information from children under 13.</p>
 
-<h2>7. Changes to This Policy</h2>
+<h2>9. Changes to This Policy</h2>
 <p>We may update this policy occasionally. The "Last updated" date at the top will reflect any changes. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-<h2>8. Contact</h2>
+<h2>10. Contact</h2>
 <p>Questions about this policy? Reach us at <a href="mailto:privacy@irtiqaa.app">privacy@irtiqaa.app</a>.</p>
 
 </body>
