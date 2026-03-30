@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>سياسة الخصوصية</title>
+<style>
+  :root {
+    --bg:        #0D0D0F;
+    --surface:   #1C1C1E;
+    --primary:   #1CBF8A;
+    --text:      #E8E8E8;
+    --secondary: #8E8E93;
+    --divider:   #2C2C2E;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "SF Pro Text", "SF Arabic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 24px 20px 48px;
+    -webkit-text-size-adjust: 100%;
+    direction: rtl;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .meta {
+    font-size: 13px;
+    color: var(--secondary);
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 24px 0 8px;
+    letter-spacing: 0.4px;
+  }
+  p { margin-bottom: 10px; color: var(--text); }
+  ul { padding-right: 20px; margin-bottom: 10px; }
+  li { margin-bottom: 5px; color: var(--text); }
+  a { color: var(--primary); text-decoration: none; }
+  .card {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: 1px solid var(--divider);
+  }
+  .highlight {
+    color: var(--primary);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<h1>سياسة الخصوصية</h1>
+<p class="meta">إرتقاء · آخر تحديث مارس 2026</p>
+
+<div class="card">
+  <p><span class="highlight">باختصار:</span> رحلاتك وعاداتك وتقدّمك تُخزَّن محليًا على جهازك. إذا سجّلت الدخول، تُزامَن بياناتك مع سحابة آمنة للنسخ الاحتياطي. نحن لا نبيع بياناتك أو نشاركها أو نستثمرها تجاريًا.</p>
+</div>
+
+<h2>1. المعلومات التي نجمعها</h2>
+<p>يخزّن إرتقاء جميع بيانات التطبيق <strong>محليًا على جهازك</strong> باستخدام SQLite. البيانات التالية موجودة على جهازك فقط:</p>
+<ul>
+  <li>خطط الرحلات والبرامج والقوالب والمهام التي تنشئها</li>
+  <li>سجلات العادات اليومية وتقدّم القراءة والسلاسل المتتالية</li>
+  <li>إعدادات التطبيق (المظهر، اللغة، التذكيرات، سياسة المزامنة)</li>
+</ul>
+<p>لا تغادر أي بيانات جهازك إلا إذا فعّلت المزامنة السحابية أو استخدمت ميزة الذكاء الاصطناعي السحابي.</p>
+
+<h2>2. الحساب والمزامنة السحابية</h2>
+<p>يمكنك تسجيل الدخول باستخدام <strong>Google</strong> أو <strong>Apple</strong> لتفعيل النسخ الاحتياطي السحابي. عند القيام بذلك:</p>
+<ul>
+  <li>يُخزَّن اسمك المعروض وعنوان بريدك الإلكتروني ومزوّد المصادقة في ملف تعريف مستخدم آمن على Google Cloud Firestore.</li>
+  <li>تُزامَن هياكل رحلاتك وسجلات المهام وبيانات الإنجاز مع Firestore لتتمكن من استعادتها على أجهزة أخرى مسجّلة بنفس الحساب.</li>
+  <li>تتحكم أنت في تكرار المزامنة (إيقاف، يومي، أو أسبوعي) من الإعدادات.</li>
+</ul>
+<p>إذا لم تسجّل الدخول، لن تُرسَل أي بيانات إلى أي خادم.</p>
+
+<h2>3. الخطط المولّدة بالذكاء الاصطناعي</h2>
+<p>عند استخدام ميزة "توليد بالذكاء الاصطناعي"، يُرسَل نص الهدف الذي تدخله إلى مزوّد الذكاء الاصطناعي الذي اخترته في الإعدادات:</p>
+<ul>
+  <li><strong>Apple Intelligence</strong> — يُعالَج بالكامل على الجهاز؛ لا شيء يغادر جهازك.</li>
+  <li><strong>Claude (Anthropic)</strong> — يُرسَل نص هدفك إلى واجهة برمجة Anthropic. انظر <a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a>.</li>
+  <li><strong>ChatGPT (OpenAI)</strong> — يُرسَل نص هدفك إلى واجهة برمجة OpenAI. انظر <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a>.</li>
+  <li><strong>Gemini (Google)</strong> — يُرسَل نص هدفك إلى واجهة برمجة Google. انظر <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+</ul>
+<p>لا تُرسَل أي بيانات أخرى (رحلات، مهام، سجلات) إلى أي مزوّد ذكاء اصطناعي.</p>
+
+<h2>4. مفاتيح API</h2>
+<p>تُخزَّن مفاتيح API التي تدخلها لمزوّدي الذكاء الاصطناعي السحابي بشكل آمن على جهازك (iOS Keychain أو التخزين المشفّر على Android). لا تُرسَل أبدًا إلى أي خادم غير نقطة نهاية API الخاصة بمزوّد الذكاء الاصطناعي المعني أثناء توليد الخطة.</p>
+
+<h2>5. الإشعارات</h2>
+<p>إذا فعّلت التذكيرات اليومية، يطلب إرتقاء إذنًا لإرسال إشعارات محلية. تتم جدولة جميع الإشعارات على الجهاز. لا تُرسَل أي بيانات إشعارات خارجيًا.</p>
+
+<h2>6. الاحتفاظ بالبيانات وحذفها</h2>
+<p>تبقى البيانات المحلية حتى تحذف التطبيق أو تمسح بياناته. إذا كانت المزامنة السحابية مفعّلة، تبقى بياناتك السحابية حتى تحذف حسابك. يمكنك حذف حسابك في أي وقت من الإعدادات &gt; الحساب والسحابة &gt; حذف الحساب. يؤدي ذلك إلى إزالة ملف تعريف Firestore وجميع البيانات المزامَنة نهائيًا.</p>
+
+<h2>7. خدمات الطرف الثالث</h2>
+<p>يتكامل إرتقاء مع Firebase Authentication (تسجيل الدخول عبر Google/Apple) و Google Cloud Firestore للمزامنة السحابية. لا يتضمن التطبيق أي حزم تحليلات أو إعلانات أو تقارير أعطال من طرف ثالث. تبدأ استدعاءات API الذكاء الاصطناعي بشكل صريح من قِبلك.</p>
+
+<h2>8. خصوصية الأطفال</h2>
+<p>إرتقاء غير موجّه للأطفال دون سن 13 عامًا. نحن لا نجمع عن قصد معلومات من الأطفال دون 13 عامًا.</p>
+
+<h2>9. تغييرات على هذه السياسة</h2>
+<p>قد نحدّث هذه السياسة من حين لآخر. سيعكس تاريخ "آخر تحديث" في الأعلى أي تغييرات. يعتبر الاستمرار في استخدام التطبيق بعد التغييرات قبولًا للسياسة المحدّثة.</p>
+
+<h2>10. تواصل معنا</h2>
+<p>أسئلة حول هذه السياسة؟ تواصل معنا على <a href="mailto:privacy@irtiqaa.app">privacy@irtiqaa.app</a>.</p>
+
+</body>
+</html>
